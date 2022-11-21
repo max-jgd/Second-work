@@ -1,13 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello it's first my redoktion</h1>
-    <h2>hello second time</h2>
+  <header class="header">
+    <div class='header__container'>
+      <a href="" class="header__logo">
+        <img src="./src/img/main-img/logo.svg" alt="Logo">
+      </a>
+      <div class="header__navigation">
+        <nav class="header__menu menu">
+          <ul class="menu__body">
+            <li class="menu__item"><a href="" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Buying</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Renting</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Selling</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="header__btn login">Login</button>
+          <button class="header__btn singin">Sign Up</button>
+        </div>
+        <div class="menu-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Perfect way to buy and sell a home</h1>
+          <p class="hero__text text">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui
+            pellentesque. Ac, gravida in eget non
+            amet eget purus non.</p>
+          <div class="hero__filters filter">
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Purpose</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Buy</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Buy</div>
+                <div class="block-filter__item">Rent</div>
+              </div>
+            </div>
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Location</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Toronto, Kanada</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Tokio, Japan</div>
+                <div class="block-filter__item">New-York , USA</div>
+                <div class="block-filter__item">Paris, France</div>
+              </div>
+            </div>
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Type</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Industrial home</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Сарай</div>
+                <div class="block-filter__item">Особняк</div>
+                <div class="block-filter__item">Квартира</div>
+              </div>
+            </div>
+            <div class="filter__btn">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="./src/img/main-img/pexels-binyamin-mellish-106399 2.svg" alt="hero">
+        </div>
+      </div>
+    </section>
+
+    <section class="Featured">
+      <div class="Featured__container">
+        <h2 class="Featured__title title">Featured In</h2>
+        <div class="Featured__box">
+          <div class="Featured__item"><img src="./src/img/main-img/logo4.svg" alt="Featured"></div>
+          <div class="Featured__item"><img src="./src/img/main-img/logo3.svg" alt="Featured"></div>
+          <div class="Featured__item"><img src="./src/img/main-img/logo6.svg" alt="Featured"></div>
+          <div class="Featured__item"><img src="./src/img/main-img/logo2.svg" alt="Featured"></div>
+          <div class="Featured__item"><img src="./src/img/main-img/logo1.svg" alt="Featured"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="popular__container">
+        <h3 class="popular__title">Popular Residence</h3>
+        <div class="popular__slider">
+          <!-- Slider main container -->
+          <div class="swiper popular__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide popular-slide">
+            <div class="popular-slide__img">
+              <img src="./src/img/cards/katie-musial-Zf5zT1torbg-unsplash.svg" alt="first home">
+              <div class="popular-slide__text">
+                <div class="popular-slide__title">
+                  Aliva Priva Jalvin
+                </div>
+                <div class="popular-slide__desc">
+                  1087 Pin Oak Drive, Clinton, USA
+                </div>
+              </div>
+              <div class="popular-slide__labels">
+                <div class="popular-slide__label">
+                  <img src="./src/img/cards icons/bed.svg" alt="bed">
+                  <span>4 beds</span>
+                </div>
+                <div class="popular-slide__label">
+                  <img src="./src/img/cards icons/bath.svg" alt="bath">
+                  <span>2 bath</span>
+                </div>
+                <div class="popular-slide__label">
+                  <img src="./src/img/cards icons/square.svg" alt="square">
+                  <span>1203 Sqft.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="popular__buttons">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="people">
+      <div class="people__house">
+        <img src="./src/img/joel-filipe-RFDP7_80v5A-unsplash.svg" alt="home">
+        <img src="./src/img/pexels-vecislavas-popa-1571470 1.svg" alt="home">
+      </div>
+      <h5 class="people__words">We Help People To <br> Find Homes</h5>
+      <p class="people__commit">Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa consectetur. Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+      <button class="people__get">Get In Touch</button>
+     </section>
+
+  </main>
+
+  <script src="./src/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>
